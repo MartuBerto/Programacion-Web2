@@ -1,0 +1,101 @@
+/* Mobile */
+.fotos-personalizadas-prod{
+    height: auto;
+    width: 100%;
+    border-radius: 10px;
+}
+
+.texto-pers{
+    padding: 0 1rem;;
+}
+
+.centrado{
+    text-align: center;
+}
+
+.contenedor-datos-produccion{
+    
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    gap: 1.5rem;
+    justify-content: center;
+   margin: 0;
+   padding: 1.25rem 0;
+    
+}
+
+   h2{
+        margin: 0;
+        padding-top: 1.5rem;
+        
+    }
+
+.caja-datos-produccion{
+   display: flex;
+   flex-direction: column;
+   justify-content: flex-start;
+   text-align: justify;
+   transition: 0.2s ease-in-out;
+   width: 100%;
+   padding: 1.25rem;
+   margin: 1.25rem 0;
+   border: 1px;
+   border-radius: 15px;
+   box-shadow: 0 0 20px #ffffffde;
+   background-color: rgba(0, 0, 0, 0.76);
+   
+}
+
+.caja-datos-produccion h2{
+    font-size: 1.5rem;
+}
+
+   figure{
+      margin: 0;
+      padding-top: 1.5rem;
+      display: flex;
+      justify-content: center;
+      width: 100%;
+
+    }
+
+.caja-datos-produccion:hover{
+    scale: 1.02;
+}
+
+
+/* Desktop */
+
+@media (min-width: 1024px){
+    .fotos-personalizadas-prod{
+        height: 31.25rem;
+        width: 30vw;
+    }
+
+    .texto-pers{
+        padding-left: 6.25rem;
+        padding-right: 6.25rem;
+    }
+
+    .contenedor-datos-produccion{
+        flex-direction: row;
+        width: 80vw;
+        gap: 3.75rem;
+        padding: 1.25rem;
+    }
+
+    .caja-datos-produccion{
+        width: 40vw;
+        padding: 0.625rem 1.875rem;
+    }
+
+    figure{
+        padding-top: 3.125rem;
+    }
+
+    .caja-datos-produccion:hover{
+        scale: 1.1;
+    }
+
+}

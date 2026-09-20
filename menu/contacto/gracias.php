@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Confirmación</title>
+      <link rel="stylesheet" href="../../style.css">
+      <link rel="stylesheet" href="gracias.css">
+      <link rel="icon" href="../../images/favicon-32x32.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header> 
+          <?php include_once '../../componentes/navbar.php'; ?>
+ </header>
+<main>
+<section class="caja">
+ <h1>¡INFORMACIÓN RECIBIDA!</h1>
+ <p>¡Gracias por contactarnos! Hemos recibido tus datos correctamente. Nos comunicaremos contigo a la brevedad.</p>
+ <p>Redirigete al Inicio desde el menú de navegación.</p>
+ <div>
+ <figure>
+ <img src="../../images/lista-de-verificacion.png" alt="Confirmación" class="imagen-confirmacion">
+</figure>
+</div>
+</section>
+ </main>
+ <footer>
+ <h2 class="titulo-footer">Redes Sociales Oficiales</h2> 
+ <ul class="lista-footer">
+ <li>
+      <a href="https://www.paramountpictures.com/movies/interstellar#interestellar"  target="_blank"> <img src="../../images/icono paramount.png" alt="" class="imagen-footer" id="paramount"></a>
+     </li>
+  <li>
+    <a href="https://www.facebook.com/InterstellarMovie/" target="_blank"> <img src="../../images/facebook.png" alt="" class="imagen-footer"></a>
+  </li>
+ <li>
+  <a href="https://www.instagram.com/interstellarmovie/" target="_blank"> <img src = "../../images/social.png" alt="" class="imagen-footer"></a>
+</li>
+ <li> 
+  <a href="https://x.com/Interstellar" target="_blank"> <img src="../../images/gorjeo.png" alt="" class="imagen-footer"></a>
+</li>
+<li class="nav-item">
+  <a href="../contacto/contacto.php" class="botones"> Contacto </a>
+</li>
+</ul>
+</footer>
+
+</body>
+</html>

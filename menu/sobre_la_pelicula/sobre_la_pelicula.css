@@ -1,0 +1,135 @@
+/* Mobile */
+
+.fotos-endurance-agujero-negro{
+    height: 60vw;
+    width: 100%;
+    border-radius: 10px;
+    
+    
+}
+
+
+.foto-mann-cooper{
+     height: 60vw;
+    width: 100%;
+    border-radius: 10px;
+    
+}
+
+
+.foto-murph-cooper{
+    height: 60vw;
+    width: 100%;
+    border-radius: 10px;
+    
+}
+
+.centrado{
+    text-align: center;
+}
+
+.texto-pers{
+    padding: 0 1rem;
+}
+
+.caja-items{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   gap: 1.25rem;
+   width: 90%;
+   padding: 1rem 1rem;
+   margin: 1.5rem auto;
+   border: 1px;
+   overflow: auto;
+   border-radius: 15px;
+   box-shadow: 0 0 20px #ffffffde;
+   background-color: rgba(0, 0, 0, 0.76);
+}
+
+.caja-items h2{
+    font-size: 1.5rem;
+}
+
+.contenedor-texto{
+float: left;
+text-align: justify;
+width: 100%;
+}
+
+audio{
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+}
+
+/* Desktop */
+
+@media (min-width: 1024px){
+    .fotos-endurance-agujero-negro{
+    height: 25rem;
+    width: 40vw;
+    border-radius: 20px;
+    
+}
+
+
+.foto-mann-cooper{
+    height: 600px;
+    width: 40vw;
+    border-radius: 20px;
+    padding: 0;
+    margin: 0;
+}
+
+
+.foto-murph-cooper{
+    height: 37.5rem;
+    width: 40vw;
+    border-radius: 20px;
+}
+
+.centrado{
+    text-align: center;
+}
+
+.texto-pers{
+    padding-left: 6.25rem;
+    padding-right: 6.25rem;
+}
+
+.caja-items{
+   display: flex;
+   align-items: center;
+   gap: 1.25rem;
+   width: 50vw;
+   padding: 1.875rem;
+   margin: 1.875rem auto;
+   border: 1px;
+   overflow: auto;
+   border-radius: 15px;
+   box-shadow: 0 0 20px #ffffffde;
+   background-color: rgba(0, 0, 0, 0.76);
+}
+
+audio{
+    display: block;
+    width: 50%;
+    margin: 1.25rem auto 0 auto;
+    max-width: 31.25rem;
+}
+
+.contenedor-texto{
+float: left;
+text-align: justify;
+width: 100%;
+}
+
+}
+
+
+
+
+
+
+

@@ -1,0 +1,280 @@
+/* Mobile First */
+
+body {
+    background-image: url('images/067650.jpg');
+    color: white;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    font-size: 1.06rem;
+    text-align: justify;
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+
+    
+}
+
+header{
+    position: sticky;
+    top: 0;
+    z-index: 999;
+}
+
+.navegador {
+    background-color: #172857;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    margin: 0;
+    padding: 1rem 0;
+    list-style: none;
+    justify-content: center;
+}
+
+.nav-item{
+    margin: 0.3rem;
+    padding: 0;
+}
+
+.botones {
+    display: block;
+    margin: 0;
+    color: white;
+    text-decoration: none;
+    font-family: Arial, sans-serif;
+    font-size: 0.9rem;
+    padding: 0.5rem;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+    font-weight: bold;
+
+}
+
+.botones:hover{
+    background-color: #61a6faa1;
+    transition:  background-color 0.3s ease;
+}
+
+main {
+    margin: 0 1rem;
+    padding-bottom: 3.125rem;
+}
+
+h1 {
+    color: #60a5fa;               
+    text-align: center;
+    margin: 0;
+    padding: 2%;
+    font-size: 2rem;
+    font-weight: bold;
+    padding: 1.5rem;
+   
+}
+
+h2 {
+    color: #60a5fa;
+    font-size: 2rem;
+    
+}
+
+h3 {
+    color: #60a5fa;
+    font-size: 1.25rem;
+}
+
+
+a {
+    color: aqua;
+    text-decoration: no;
+
+}
+
+.caja-texto{
+   display: flex;
+   align-items: center;
+   width: 90%;
+   gap: 1.25rem;
+   padding: 1.25rem 1.20rem;
+   margin: 1.25rem auto;
+   border: 1px;
+   border-radius: 15px;
+   box-shadow: 0 0 20px #ffffffde;
+   background-color: rgba(0, 0, 0, 0.616);
+
+}
+
+.centrado{
+    text-align: center;
+}
+
+
+.poster-interstellar{ 
+    height: auto;
+    width: 100%;
+    border-radius: 20px;
+}
+
+.multimedia{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    gap: 1.5rem;
+    margin: 0,
+}
+
+.trailer{
+   border: 3px solid #60a5fa;
+   border-radius: 10px;
+   box-shadow: 0 0 20px #61a6fab7;
+   transition: 0.2s ease-in-out;
+   width: 90%;
+   max-width: 320rem;
+   height: 11.25rem;
+}
+
+#poster{
+   height: auto;
+   width: 70%;
+   max-width: 16.25rem;
+   border: 3px solid #60a5fa;
+   border-radius: 10px;
+   box-shadow: 0 0 20px #61a6fab7;
+   transition: 0.2s ease-in-out;
+}
+
+.trailer:hover{
+    scale: 1.05;
+}
+
+#poster:hover{
+    scale: 1.05;
+}
+
+footer { 
+     background-color: #000000;
+     color: #e2e8f0;
+     text-align: center;
+     padding: 2rem 0;
+     margin: 0;
+
+}
+
+footer h2 {
+    color: #60a5fa;
+    font-size: 1.25rem;
+    margin: 0;
+    padding-bottom: 1.5rem;
+    
+    
+}
+
+footer p {
+    text-align: center;
+    margin-left: 3.125rem;
+    margin-right: 3.125rem;
+    margin-top: 0.938rem;
+    margin-bottom: 0.938rem;
+    text-decoration: none;
+    
+
+}
+
+.lista-footer{
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center; 
+    justify-content: center;
+    flex-direction: row;
+    gap: 1rem;
+    padding: 0;
+    margin: 0 auto;
+    width: 100%;
+  
+}
+
+.imagen-footer{
+    width: 2.5rem;
+    height: 2.5rem;
+}
+
+#paramount{
+    width: 3rem;
+    height: 2.5rem;
+}
+
+/* Desktop */
+
+@media (min-width: 1024px){
+    .body{
+        background-attachment: fixed;
+    }
+
+
+    .navegador{
+        flex-direction: row;
+        padding: 1.875rem;
+    }
+
+    .nav-item{
+        margin: 0 1.25rem;
+    }
+
+    .botones{
+        font-size: 1.37rem;
+        padding: 0.625rem;
+    }
+
+    main{
+        margin-left: 6.25rem;
+        margin-right: 6.25rem;
+
+    }
+
+    .caja-texto{
+        flex-direction: row;
+        width: 60vw;
+        padding: 2%;
+    }
+
+    .multimedia{
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 2.5rem;
+    }
+
+    .poster-interstellar{
+        height: auto;
+        width: 100%;
+    }
+
+    #poster{
+        height: auto;
+        width: 25vw;
+        max-width: 23.75rem;
+
+    }
+
+    .trailer{
+        width: 40vw;
+        max-width: 35rem;
+        height: 19.688rem;
+    }
+
+    .lista-footer{
+        flex-direction: row;
+    }
+}
+
