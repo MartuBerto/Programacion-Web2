@@ -48,24 +48,7 @@
  </main>
    
  <footer>
- <h2 class="titulo-footer">Redes Sociales Oficiales</h2> 
- <ul class="lista-footer">
- <li>
-     <a href="https://www.paramountpictures.com/movies/interstellar#interestellar"  target="_blank"> <img src="../../images/icono paramount.png" alt="" class="imagen-footer" id="paramount"></a>
-     </li>
-  <li>
-    <a href="https://www.facebook.com/InterstellarMovie/" target="_blank"> <img src="../../images/facebook.png" alt="" class="imagen-footer"></a>
-  </li>
- <li>
-  <a href="https://www.instagram.com/interstellarmovie/" target="_blank"> <img src = "../../images/social.png" alt="" class="imagen-footer"></a>
-</li>
- <li> 
-  <a href="https://x.com/Interstellar" target="_blank"> <img src="../../images/gorjeo.png" alt="" class="imagen-footer"></a>
-</li>
-<li class="nav-item">
-  <a href="./contacto.php" class="botones"> Contacto </a>
-</li>
-</ul>
+   <?php include_once '../../componentes/footer.php'; ?>
 </footer>
 
 </body> 
