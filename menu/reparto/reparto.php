@@ -17,8 +17,6 @@
     </header>
 
  <main>
-  <article class="texto-pers">
-  <h1>REPARTO PRINCIPAL</h1>
  <article class="texto-pers">
   <h1>REPARTO PRINCIPAL</h1>
      <section class="contenedor-personajes">
