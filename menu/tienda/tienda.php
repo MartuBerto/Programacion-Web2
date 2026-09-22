@@ -67,15 +67,15 @@
         
     
         if ($zonaElegida == "") {
-           echo "<p class= texto> Selecciona tu zona para ver detalles del envio. </p>"; 
+           echo "<p class= texto id= color> Selecciona tu zona para ver detalles del envio. </p>"; 
         } elseif ($producto['precio'] >= 45000 && $tieneEnvioGratis){
-            echo "<p class= texto>¡Te enviamos un llavero de regalo y tenés envío gratis!</p>";
+            echo "<p class= texto id= color>¡Te enviamos un llavero de regalo y tenés envío gratis!</p>";
         } elseif ($producto['precio'] >= 45000 && !$tieneEnvioGratis) {
-            echo "<p class= texto>¡Te enviamos un llavero de regalo, pero no tenés envío gratis!</p>";
+            echo "<p class= texto id= color>¡Te enviamos un llavero de regalo!</p><p class= texto id=color-dos> No tenés envío gratis</p>";
         } elseif ($producto['precio'] < 45000 && $tieneEnvioGratis) {
-            echo "<p class= texto> ¡Tenés envío gratis!</p>";
+            echo "<p class= texto id= color> ¡Tenés envío gratis!</p>";
         } else{ 
-            echo "<p>No tenés llavero de regalo ni envío gratis.</p>";
+            echo "<p class= texto id= color-dos>No tenés llavero de regalo ni envío gratis.</p>";
         }
 
           echo "</div>";
