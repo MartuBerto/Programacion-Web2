@@ -6,6 +6,7 @@
       <li class="nav-item"><a href="/Programacion-Web2/menu/reparto/reparto.php" class="botones">Reparto</a></li>
       <li class="nav-item"><a href="/Programacion-Web2/menu/produccion_y_grabacion/produccion_y_grabacion.php" class="botones">Producción y Grabación</a></li>
       <li class="nav-item"><a href="/Programacion-Web2/menu/curiosidades/curiosidades.php" class="botones">Curiosidades</a></li>
+      <li class="nav-item"> <a href="/Programacion-Web2/menu/tienda/tienda.php" class="botones">Tienda</a></li>
     </ul>
   </nav>
 </header>
