@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tienda Merchandising Interstellar</title>
+    <title>Tienda de Merchandising</title>
     <link rel="icon" href="../../images/favicon-32x32.png">
    <link rel="stylesheet" href="../../style.css">
    <link rel="stylesheet" href="./tienda.css">
@@ -17,10 +17,10 @@
 
     <main>
         <h1>Tienda</h1>
-        <h2>Merchandising</h2>
+        <h2 class="centrado">Merchandising</h2>
 
-
-        <form method="POST" action="tienda.php" class="formulario">
+        <section>
+        <form method="post" action="tienda.php" class="formulario">
             <fieldset>
         <label for="zona">¿De qué zona sos?</label>
         <select name="zona" id="zona">
@@ -34,10 +34,13 @@
         <input type="submit" value="Enviar">
     </fieldset>
         </form>
+    </section>
+
+    
 
     <?php
 
-    $zonaElegida = $_POST['zona'] ?? ""; //preguntar al profe si esta bien definido
+    $zonaElegida = $_POST['zona'] ?? "";
 
     $productos = [
         ["nombre" => "Bluray Interstellar", "stock" => 10, "precio" => 40000, "imagen" => "../../images/bluray interstellar.png"],
@@ -54,7 +57,7 @@
         "zona3" => "zona sur",
         "zona4" => "zona este",
         "zona5" => "zona oeste"
-    ]; //preguntar si esta bien definido 
+    ]; 
 
      $tieneEnvioGratis = ($zonaElegida == "zona1") || ($zonaElegida == "zona2") || ($zonaElegida == "zona3");
 
@@ -64,7 +67,9 @@
         echo "<img src='" . $producto['imagen'] . "' width='600'>";
         echo "<p class= texto>Precio: $" . $producto['precio'] . "</p>";
       
-        
+        if($producto['stock'] == 0){
+            echo "<p class= texto id= color-dos> ¡No hay stock disponible!</p>";
+        } 
     
         if ($zonaElegida == "") {
            echo "<p class= texto id= color> Selecciona tu zona para ver detalles del envio. </p>"; 
@@ -77,7 +82,7 @@
         } else{ 
             echo "<p class= texto id= color-dos>No tenés llavero de regalo ni envío gratis.</p>";
         }
-
+        
           echo "</div>";
     }
     ?>
