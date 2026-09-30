@@ -14,42 +14,55 @@
 </head>
 
 <body>
-  <?php include_once '../../componentes/navbar.php'; ?>
+  <?php  
+  
+    if(@$_GET['error'] == 'ingresourl'){
+        echo"<h1>Le pedimos disculpas por las molestias...</h1>";
+        echo"<article>";
+        echo "<p>Es obligatorio completar el formulario de contacto con los datos solicitados.</p>";
+        echo "<p> Diríjase a la sección de Contacto para rellenar el formulario correctamente con el siguiente enlace: <a href='/Programacion-Web2/contacto/contacto.php#form'>FORMULARIO</a></p>";
+        echo "</article>";
 
-  <main>
-    <h1>Contáctanos</h1>
-    <section>
-      <form action="./gracias.php" method="post">
-        <fieldset>
-          <legend class="centrado">Datos Personales </legend>
-          <label> Nombre:
+    } else{
+      include_once '../../componentes/navbar.php';
+
+      echo '<main>';
+     echo '<h1>Contáctanos</h1>';
+     echo '<section>';
+       echo '<form action="./gracias.php" method="post" id="form">';
+         echo '<fieldset>';
+          echo ' <legend class="centrado"><span>Datos Personales</span></legend>';
+          echo ' <label> Nombre:
             <input type="text" name="nombre_usuario" placeholder="Nombre" minlength="3" required>
-          </label>
-          </div>
-          </div>
-          <label> Apellido:
+          </label>';
+           echo '<label> Apellido:
             <input type="text" name="apellido_usuario" placeholder="Apellido" minlength="3" required>
-          </label>
-          </div>
-          <div>
-            <label> Correo Electrónico:
+          </label>';
+             echo '<label> Correo Electrónico:
               <input type="email" name="email" placeholder="email@example.com" required>
-            </label>
-          </div>
-          <div>
-            <label>Mensaje:
+            </label>';
+           echo '<label>Seleccione motivo de contacto:
+            <select name="motivoContacto" id="" required>
+              <option value="" disabled selected>Motivo</option>
+              <option value="consulta">Consulta sobre un producto</option>
+              <option value="pedido">Estado de mi pedido</option>
+              <option value="cambios">Cambios y devoluciones</option>
+              <option value="otro">Otro</option>
+            </select></label>';
+             echo '<label>Mensaje:
               <textarea name="Mensaje" cols="40" rows="5" placeholder="Escribe un mensaje..." maxlength="150"></textarea>
-            </label>
-            <input type="submit" value="Enviar Mensaje" class="boton-enviar">
-          </div>
-        </fieldset>
-      </form>
-    </section>
-  </main>
+            </label>';
+            echo '<div> <input type="submit" value="Enviar Mensaje" class="boton-enviar"> </div>';
+         echo '</fieldset>';
+       echo '</form>';
+     echo '</section>';
+  echo '</main>';
 
-  <footer>
-    <?php include_once '../../componentes/footer.php'; ?>
-  </footer>
+  include_once '../../componentes/footer.php';
+    }
+  
+  
+  ?>
 
 </body>
 

@@ -14,10 +14,89 @@
 </head>
 
 <body>
-    <header>
+   
         <?php include_once '../../componentes/navbar.php'; ?>
-    </header>
+    
     <main>
+
+    <?php if($_SERVER["REQUEST_METHOD"] == "POST") {
+
+        $nombre = trim($_POST["nombre_usuario"]);
+        $apellido = trim($_POST["apellido_usuario"]);
+
+        $nombreerroneo= false;
+
+        if(strlen($nombre) < 3){
+            $nombreerroneo = true;
+        }
+
+        $apellidoerroneo = false;
+
+        if(strlen($apellido) < 3){
+            $apellidoerroneo = true;
+        }
+
+        $mail= trim($_POST["email"]);
+
+        $emailerroneo = false;
+
+        if(!filter_var($email, FILTER_VALIDATE_EMAIL)){
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    } else {
+
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
         <section class="caja">
             <h1>¡INFORMACIÓN RECIBIDA!</h1>
             <p>¡Gracias por contactarnos! Hemos recibido tus datos correctamente. Nos comunicaremos contigo a la brevedad.</p>

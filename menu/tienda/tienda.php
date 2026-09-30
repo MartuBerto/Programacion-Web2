@@ -38,8 +38,6 @@
             </form>
         </section>
 
-
-
         <?php
 
         $zonaElegida = $_POST['zona'] ?? "";
@@ -75,11 +73,11 @@
 
             if ($zonaElegida == "") {
                 echo "<p class= texto id= color> Selecciona tu zona para ver detalles del envio. </p>";
-            } elseif ($producto['precio'] >= 45000 && $tieneEnvioGratis) {
+            } elseif ($producto['precio'] >= 45000 && $tieneEnvioGratis && $producto['stock'] > 0) {
                 echo "<p class= texto id= color>¡Te enviamos un llavero de regalo y tenés envío gratis!</p>";
-            } elseif ($producto['precio'] >= 45000 && !$tieneEnvioGratis) {
+            } elseif ($producto['precio'] >= 45000 && !$tieneEnvioGratis && $producto['stock'] > 0) {
                 echo "<p class= texto id= color>¡Te enviamos un llavero de regalo!</p><p class= texto id=color-dos> No tenés envío gratis</p>";
-            } elseif ($producto['precio'] < 45000 && $tieneEnvioGratis) {
+            } elseif ($producto['precio'] < 45000 && $tieneEnvioGratis && $producto['stock'] > 0) {
                 echo "<p class= texto id= color> ¡Tenés envío gratis!</p>";
             } else {
                 echo "<p class= texto id= color-dos>No tenés llavero de regalo ni envío gratis.</p>";
