@@ -1,5 +1,4 @@
-/* Mobile First 
-Aclaro profe que en los css que corresponden a la materia PW1 tengo el "intento" de responsive porque todavia no rendi el final y agarré el modelo para la materia anterior para este repositorio */
+/* Aclaro profe que en los css que corresponden a la materia PW1 tengo el "intento" de responsive porque todavia no rendi el final y agarré el modelo para la materia anterior para este proyecto */
 
 body {
     background-image: url('images/067650.jpg');
@@ -244,7 +243,7 @@ footer p {
     }
 
     .caja-texto{
-        flex-direction: row;
+      
         width: 60vw;
         padding: 2%;
     }

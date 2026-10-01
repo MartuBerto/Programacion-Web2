@@ -18,7 +18,7 @@
   
     if(@$_GET['error'] == 'ingresourl'){
         echo"<h1>Le pedimos disculpas por las molestias...</h1>";
-        echo"<article class= caja-texto>";
+        echo"<article class= 'caja-texto' id= 'error-contacto'>";
         echo "<p>Es obligatorio completar el formulario de contacto con los datos solicitados.</p>";
         echo "<p> Diríjase a la sección de Contacto para rellenar el formulario correctamente con el siguiente enlace: <a href='/Programacion-Web2/menu/contacto/contacto.php#form'>FORMULARIO</a></p>";
         echo "</article>";

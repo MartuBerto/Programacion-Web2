@@ -1,4 +1,4 @@
-/* Mobile */
+
 .caja{
    display: flex;
    flex-direction: column;
@@ -9,6 +9,30 @@
    gap: 0.938rem;
    width: 100%;
    height: auto;
+}
+
+#caja-gracias{
+    width: 90%;
+    max-width: 37.5rem;       
+    margin: 2rem auto; 
+    margin-top: 3rem;
+    margin-bottom: 5.70rem;       
+    padding: 2rem;        
+    display: flex;
+    flex-direction: column;   
+    align-items: center;      
+    text-align: center;
+
+        ul{
+            list-style-type: none;
+            padding: 0;
+            margin: 1rem 0;
+        }
+
+        li{
+            margin: 0.5rem 0;
+        }
+
 }
 
 .imagen-confirmacion{
