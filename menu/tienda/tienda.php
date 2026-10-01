@@ -25,8 +25,8 @@
             <form method="post" action="tienda.php" class="formulario">
                 <fieldset>
                     <label for="zona">¿De qué zona sos?</label>
-                    <select name="zona" id="zona">
-                        <option value="">Seleccione la zona</option>
+                    <select name="zona" id="">
+                        <option value="" disabled selected>Seleccione la zona</option>
                         <option value="zona1">CABA</option>
                         <option value="zona2">Zona Norte</option>
                         <option value="zona3">Zona Sur</option>
@@ -51,39 +51,58 @@
             ["nombre" => "Figura coleccionable de Tars", "stock" => 2, "precio" => 30000, "imagen" => "../../images/figura tars interstellar.png"],
         ];
 
-        $zona = [
-            "zona1" => "caba",
-            "zona2" => "zona norte",
-            "zona3" => "zona sur",
-            "zona4" => "zona este",
-            "zona5" => "zona oeste"
-        ];
 
-        $tieneEnvioGratis = ($zonaElegida == "zona1") || ($zonaElegida == "zona2") || ($zonaElegida == "zona3");
+        $tieneEnvioGratis = false;
+
+        if($zonaElegida == "zona1" || $zonaElegida == "zona2" || $zonaElegida == "zona3"){
+            $tieneEnvioGratis = true;
+        }
 
         foreach ($productos as $producto) {
             echo "<div class= caja-texto id= tienda>";
-            echo "<h3 class= titulo-tienda>" . $producto['nombre'] . "</h3>";
-            echo "<img src='" . $producto['imagen'] . "' width='600'>";
-            echo "<p class= texto>Precio: $" . $producto['precio'] . "</p>";
-
-            if ($producto['stock'] == 0) {
-                echo "<p class= texto id= color-dos> ¡No hay stock disponible!</p>";
-            }
 
             if ($zonaElegida == "") {
-                echo "<p class= texto id= color> Selecciona tu zona para ver detalles del envio. </p>";
-            } elseif ($producto['precio'] >= 45000 && $tieneEnvioGratis && $producto['stock'] > 0) {
-                echo "<p class= texto id= color>¡Te enviamos un llavero de regalo y tenés envío gratis!</p>";
-            } elseif ($producto['precio'] >= 45000 && !$tieneEnvioGratis && $producto['stock'] > 0) {
-                echo "<p class= texto id= color>¡Te enviamos un llavero de regalo!</p><p class= texto id=color-dos> No tenés envío gratis</p>";
-            } elseif ($producto['precio'] < 45000 && $tieneEnvioGratis && $producto['stock'] > 0) {
-                echo "<p class= texto id= color> ¡Tenés envío gratis!</p>";
-            } else {
-                echo "<p class= texto id= color-dos>No tenés llavero de regalo ni envío gratis.</p>";
-            }
+                    echo "<h3 class= titulo-tienda>" . $producto['nombre'] . "</h3>";
+                    echo "<img src='" . $producto['imagen'] . "' width='600'>";
+                    echo "<p class= texto>Precio: $" . $producto['precio'] . "</p>";
+                    echo "<p class= texto id= color> Selecciona tu zona para ver detalles del envio. </p>";
 
-            echo "</div>";
+            }else{
+                if ($producto['stock'] == 0) {
+                        echo "<h3 class= titulo-tienda>" . $producto['nombre'] . "</h3>";
+                        echo "<img src='" . $producto['imagen'] . "' width='600'>";
+                        echo "<p class= texto>Precio: $" . $producto['precio'] . "</p>";
+                        echo "<p class= texto id= color-dos> ¡No hay stock disponible!</p>";
+
+                } elseif ($producto["precio"] >= 45000 && $tieneEnvioGratis && $producto['stock'] > 0) {
+                        echo "<h3 class= titulo-tienda>" . $producto['nombre'] . "</h3>";
+                        echo "<img src='" . $producto['imagen'] . "' width='600'>";
+                        echo "<p class= texto>Precio: $" . $producto['precio'] . "</p>";
+                        echo "<p class= texto id= color>¡Te enviamos un llavero de regalo y tenés envío gratis!</p>";
+
+                } elseif ($producto["precio"] >= 45000 && !$tieneEnvioGratis && $producto['stock'] > 0) {
+                        echo "<h3 class= titulo-tienda>" . $producto['nombre'] . "</h3>";
+                        echo "<img src='" . $producto['imagen'] . "' width='600'>";
+                        echo "<p class= texto>Precio: $" . $producto['precio'] . "</p>";
+                        echo "<p class= texto id= color>¡Te enviamos un llavero de regalo!</p><p class= texto id=color-dos> No tenés envío gratis</p>";
+
+                } elseif ($producto["precio"] < 45000 && $tieneEnvioGratis && $producto['stock'] > 0) {
+                        echo "<h3 class= titulo-tienda>" . $producto['nombre'] . "</h3>";
+                        echo "<img src='" . $producto['imagen'] . "' width='600'>";
+                        echo "<p class= texto>Precio: $" . $producto['precio'] . "</p>";
+                        echo "<p class= texto id= color> ¡Tenés envío gratis!</p>";
+
+                } else {
+                        echo "<h3 class= titulo-tienda>" . $producto['nombre'] . "</h3>";
+                        echo "<img src='" . $producto['imagen'] . "' width='600'>";
+                        echo "<p class= texto>Precio: $" . $producto['precio'] . "</p>";
+                        echo "<p class= texto id= color-dos>No tenés llavero de regalo ni envío gratis.</p>";
+                }
+
+            }
+            
+             echo "</div>";
+
         }
         ?>
 

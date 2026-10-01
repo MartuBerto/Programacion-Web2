@@ -13,9 +13,9 @@
 </head>
 
 <body>
-  <header>
+  
     <?php include_once './componentes/navbar.php' ?>
-  </header>
+ 
   <main>
     <section class="texto-pers">
       <h1>INTERSTELLAR: El viaje de la humanidad</h1>
@@ -43,8 +43,8 @@
     </section>
   </main>
 
-  <footer>
     <?php include_once './componentes/footer.php' ?>
+    
 </body>
 
 </html>

@@ -18,9 +18,9 @@
   
     if(@$_GET['error'] == 'ingresourl'){
         echo"<h1>Le pedimos disculpas por las molestias...</h1>";
-        echo"<article>";
+        echo"<article class= caja-texto>";
         echo "<p>Es obligatorio completar el formulario de contacto con los datos solicitados.</p>";
-        echo "<p> Diríjase a la sección de Contacto para rellenar el formulario correctamente con el siguiente enlace: <a href='/Programacion-Web2/contacto/contacto.php#form'>FORMULARIO</a></p>";
+        echo "<p> Diríjase a la sección de Contacto para rellenar el formulario correctamente con el siguiente enlace: <a href='/Programacion-Web2/menu/contacto/contacto.php#form'>FORMULARIO</a></p>";
         echo "</article>";
 
     } else{
@@ -42,15 +42,14 @@
               <input type="email" name="email" placeholder="email@example.com" required>
             </label>';
            echo '<label>Seleccione motivo de contacto:
-            <select name="motivoContacto" id="" required>
+            <select name="motivo_contacto" id="" required>
               <option value="" disabled selected>Motivo</option>
               <option value="consulta">Consulta sobre un producto</option>
               <option value="pedido">Estado de mi pedido</option>
               <option value="cambios">Cambios y devoluciones</option>
-              <option value="otro">Otro</option>
             </select></label>';
              echo '<label>Mensaje:
-              <textarea name="Mensaje" cols="40" rows="5" placeholder="Escribe un mensaje..." maxlength="150"></textarea>
+              <textarea name="mensaje" cols="40" rows="5" placeholder="Escribe un mensaje..." maxlength="150"></textarea>
             </label>';
             echo '<div> <input type="submit" value="Enviar Mensaje" class="boton-enviar"> </div>';
          echo '</fieldset>';

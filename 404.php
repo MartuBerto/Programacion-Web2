@@ -5,8 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Error 404</title>
-    <link rel="stylesheet" href="/style.css">
-    <link rel="stylesheet" href="/404.css">
+    <link rel="stylesheet" href="/Programacion-Web2/style.css">
+    <link rel="stylesheet" href="/Programacion-Web2/404.css">
     <link rel="shortcut icon" href="/images/favicon-32x32.png" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -22,7 +22,7 @@
             <p>Parece que estamos teniendo problemas, haga click en la imagen para volver al inicio.</p>
             <div>
                 <figure>
-                    <a href="/index.html"> <img src="/images/advertencia.png" alt="" class="imagen"></a>
+                    <a href="/Programacion-Web2/index.php"> <img src="/Programcion-Web2/images/advertencia.png" alt="" class="imagen"></a>
                 </figure>
             </div>
     </main>

@@ -14,9 +14,9 @@
 </head>
 
 <body>
-  <header>
+  
     <?php include_once '../../componentes/navbar.php'; ?>
-  </header>
+
 
   <main>
     <article class="texto-pers">
@@ -94,9 +94,9 @@
       </section>
     </article>
   </main>
-  <footer>
+  
     <?php include_once '../../componentes/footer.php'; ?>
-  </footer>
+  
 
 </body>
 
