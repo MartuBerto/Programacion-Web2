@@ -86,7 +86,7 @@
                     echo "<li>" . $error . "</li>";
                 }
                 echo "</ul>";
-                echo "<p> Para volver a la sección de Contacto y rellenar el formulario correctamente siga el siguiente enlace: <a href='/Programacion-Web2/contacto/contacto.php#form'>REGRESAR</a></p>";
+                echo "<p> Para volver a la sección de Contacto y rellenar el formulario correctamente siga el siguiente enlace: <a href='/Programacion-Web2/menu/contacto/contacto.php#form'>REGRESAR</a></p>";
                 echo "</article>";
             }else{
                

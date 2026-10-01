@@ -1,5 +1,3 @@
-/* Mobile */
-
 .fotos-endurance-agujero-negro{
     height: 60vw;
     width: 100%;
@@ -63,7 +61,6 @@ audio{
     box-sizing: border-box;
 }
 
-/* Desktop */
 
 @media (min-width: 1024px){
     .fotos-endurance-agujero-negro{

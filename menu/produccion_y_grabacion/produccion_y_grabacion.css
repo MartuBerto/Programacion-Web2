@@ -1,4 +1,3 @@
-/* Mobile */
 .fotos-personalizadas-prod{
     height: auto;
     width: 100%;
@@ -64,8 +63,6 @@
     scale: 1.02;
 }
 
-
-/* Desktop */
 
 @media (min-width: 1024px){
     .fotos-personalizadas-prod{

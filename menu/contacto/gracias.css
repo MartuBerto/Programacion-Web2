@@ -1,4 +1,3 @@
-
 .caja{
    display: flex;
    flex-direction: column;
@@ -52,7 +51,6 @@ div{
         
 }
 
-/* Desktop */
 @media (min-width: 1024px){
 
     .caja{
